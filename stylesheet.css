@@ -1,24 +1,30 @@
-.main_link {
-    border: 5px solid PapayaWhip;
-    float: left;
-}
-html, body {
-    margin:0;
-    padding:0;
-    width:100%;
-    height:100%;
-}
-
-.container {
-    width:100%;
+.nav {
+    background-color: DarkSalmon;
+    width: 100%;
+    height: 50px
+    color: PeachPuff;
+    font-size: 50px;
+    font-style: Bookman;
 }
 
 .column {
-    width:33.33333333%;
-    float:left;
+    float: left;
+    width: 33.33%;
 }
 
-.column img {
-    width:100%;
-    height:auto;
+.main_image {
+    width: 100%;
+    height: auto;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
 }
